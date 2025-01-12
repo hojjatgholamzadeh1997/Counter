@@ -2,4 +2,4 @@
 
 ### Designing a simple counter with *HTML* & *CSS (SASS)* & *JavaScript*
 
-#### --->  Click [Here]() to See Demo.
+#### --->  Click [Here](https://hojjatgholamzadeh1997.github.io/Counter/) to See Demo.
