@@ -1,10 +1,11 @@
 @import "./reset";
 
-$color_1: #3f88c5;
+$color_1: #00b4d8;
 $color_2: #fdca40;
 $color_3: #F0F0F0;
 
 body {
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,9 +14,9 @@ body {
   user-select: none;
 
   .counter-container {
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     width: 250px;
-    height: 250px;
+    padding: 40px 0;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -25,13 +26,11 @@ body {
 
     h1 {
       font-size: 25px;
-      font-family: sans-serif;
       color: rgba(0, 0, 0, 0.4);
     }
 
     h2 {
       font-size: 45px;
-      font-family: sans-serif;
       font-weight: normal;
       background-color: $color_3;
       color: rgba(0, 0, 0, 0.6);
@@ -43,13 +42,13 @@ body {
       
       button {
         padding: 10px 20px;
+        margin: 0 2px;
         outline: none;
         border: 0;
         border-radius: 10px;
         font-size: 15px;
         color: rgba(0, 0, 0, 0.8);
         background-color: $color_3;
-        font-family: Verdana, sans-serif;
         letter-spacing: 1px;
 
         &:hover {
