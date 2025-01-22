@@ -1,22 +1,23 @@
 @import "./reset";
 
-$color_1: #00b4d8;
-$color_2: #fdca40;
-$color_3: #F0F0F0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$color_1: #FCC737;
+$color_2: #08C2FF;
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", serif;
+  background-color: $color_1;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: $color_1;
   user-select: none;
 
   .counter-container {
     border: 2px solid #fff;
     width: 250px;
-    padding: 40px 0;
+    padding: 40px 0 30px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -26,35 +27,36 @@ body {
 
     h1 {
       font-size: 25px;
-      color: rgba(0, 0, 0, 0.4);
+      font-weight: normal;
+      color: rgba(0, 0, 0, 0.5);
     }
 
     h2 {
-      font-size: 45px;
+      font-size: 40px;
       font-weight: normal;
-      background-color: $color_3;
+      background-color: #fff;
       color: rgba(0, 0, 0, 0.6);
       border-radius: 10px;
       padding: 10px 15px;
+      min-width: 75px;
+      text-align: center;
     }
 
     .counter-buttons {
-      
       button {
+        background-color: #fff;
+        font-size: 15px;
         padding: 10px 20px;
-        margin: 0 2px;
+        margin: 0 1px;
         outline: none;
         border: 0;
         border-radius: 10px;
-        font-size: 15px;
         color: rgba(0, 0, 0, 0.8);
-        background-color: $color_3;
-        letter-spacing: 1px;
 
         &:hover {
           background-color: $color_2;
-          cursor: pointer;
           color: rgba(0, 0, 0, 1);
+          cursor: pointer;
         }
       }
     }
